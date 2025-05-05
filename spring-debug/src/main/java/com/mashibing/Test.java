@@ -20,9 +20,10 @@ public class Test {
 //
 ////        MyClassPathXmlApplicationContext ac = new MyClassPathXmlApplicationContext("applicationContext.xml");
 ////        System.out.println(ac.getBean(MyPropertySource.class).getName());
-////        ApplicationContext ac = new ClassPathXmlApplicationContext("spring-${username}.xml");
-////        Person bean = ac.getBean(Person.class);
-////        System.out.println(bean);
+        //这里的configLocation参数中使用了占位符
+        ApplicationContext ac = new ClassPathXmlApplicationContext("spring-${username}.xml");
+        Person bean = ac.getBean(Person.class);
+        System.out.println(bean);
 ////        A bean1 = ac.getBean(A.class);
 ////        System.out.println(bean1);
 ////        ac.close();
@@ -58,9 +59,9 @@ public class Test {
 //        A a = new A();
 //        B b = new B();
 
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("test.xml");
-        Student bean = context.getBean(Student.class);
-        context.close();
+//        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("test.xml");
+//        Student bean = context.getBean(Student.class);
+//        context.close();
 
         //想通过student获取其他bean对象怎么办？
 

@@ -558,8 +558,8 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 			/**
 			 * 前戏，做容器刷新前的准备工作
 			 * 1、设置容器的启动时间
-			 * 2、设置活跃状态为true
-			 * 3、设置关闭状态为false
+			 * 2、设置关闭状态为false
+			 * 3、设置活跃状态为true
 			 * 4、获取Environment对象，并加载当前系统的属性值到Environment对象中
 			 * 5、准备监听器和事件的集合对象，默认为空的集合
 			 */
@@ -692,7 +692,7 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 	/**
 	 * <p>Replace any stub property sources with actual instances.
 	 * @see org.springframework.core.env.PropertySource.StubPropertySource
-	 * see org.springframework.web.context.support.WebApplicationContextUtils#initServletPropertySources
+	 * @see org.springframework.web.context.support.WebApplicationContextUtils#initServletPropertySources
 	 */
 	protected void initPropertySources() {
 		// For subclasses: do nothing by default.
